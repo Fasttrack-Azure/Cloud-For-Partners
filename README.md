@@ -38,6 +38,3 @@ Get the current default subscription using list
 ```sh
 az account list --query "[?isDefault]"
 ```
-<img width="470" alt="image" src="https://user-images.githubusercontent.com/11691661/154816560-f0cd1d1f-7db2-4ade-9e5a-ba0b06e68f5e.png">
-
-
