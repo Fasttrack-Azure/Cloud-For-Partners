@@ -26,12 +26,12 @@ az login
 
 Set default Azure subscription
 ```sh
-az account set --subscription ”<Your Name>-RG”
+az account set --subscription ”b214611b-9a79-4e7e-afb0-3d9785737f10”
 ```
 
 Create Resource Group
 ```sh
-az group create --name MyResourceGroup --location eastus
+az group create --name <Your-Name-RG-01> --location eastus
 ```
 
 Get the current default subscription using list 
