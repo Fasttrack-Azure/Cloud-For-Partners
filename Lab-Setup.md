@@ -4,8 +4,7 @@ These are hands-on resources to for the course "Cloud for Partners".
 
 # Slides
 
-https://drive.google.com/drive/folders/1HhkaBI6i15kzqo1UimoHxOqcelQLlrYt?usp=sharing
-
+https://drive.google.com/drive/folders/15xw8HHO72jp7NaKY7iHBQJ5bIbn62AAw?usp=sharing
 
 ## List of softwares to be installed
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
