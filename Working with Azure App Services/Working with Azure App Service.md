@@ -8,7 +8,7 @@ To open the Cloud Shell, just select Try it from the upper right corner of a cod
 
 ### Sign in to Azure
 ```
-subscription="<subscriptionId>" # add subscription here
+$subscription="<subscriptionId>" # add subscription here
 
 az account set -s $subscription # ...or use 'az login'
 ```
@@ -19,7 +19,7 @@ az account set -s $subscription # ...or use 'az login'
 # Variable block
 let "randomIdentifier=$RANDOM*$RANDOM"
 location="East US"
-resourceGroup="Sid-$randomIdentifier"
+resourceGroup="<your-name>-$randomIdentifier"
 tag="deploy-linux-docker-app-only.sh"
 appServicePlan="sb-app-service-plan-$randomIdentifier"
 webapp="sb-web-app-$randomIdentifier"
