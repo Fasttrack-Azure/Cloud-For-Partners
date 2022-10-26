@@ -1,6 +1,6 @@
 # Lab-Setup
 
-These are hands-on resources to for the course "Cloud for Partners"
+These are hands-on resources to for the course "Cloud for Partners".
 
 # Slides
 
