@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "R/bF3J19PQv3GVlqXRB3tuvQ2U9iH4AiMWrgv6taFFlAWxM4nyBzmatHi2VrnvctLz0EvAA26+j5/JDt8PaMug==",
+  "success": true,
+  "projectFilePath": "C:\\Starbucks\\Cloud for Partners\\Cloud-For-Partners\\Working with Actions\\Working with Actions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adminuser\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\adminuser\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\adminuser\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\adminuser\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\adminuser\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\adminuser\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudforpartners
+spec:
+  selector:
+    matchLabels:
+      app: cloudforpartners
+  template:
+    metadata:
+      labels:
+        app: cloudforpartners
+    spec:
+      containers:
+      - name: cloudforpartners
+        image: tshapelabacr01.azurecr.io/cloudforpartners:sid
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
