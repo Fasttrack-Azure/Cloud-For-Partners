@@ -1,40 +1,70 @@
-## Welcome to the course - Cloud for Partners
+# Lab-Setup
 
-### The below description is to guide you on the lab setup required for this course.
+These are hands-on resources to for the course "Cloud for Partners"
+
+# Slides
+
+https://drive.google.com/drive/folders/1HhkaBI6i15kzqo1UimoHxOqcelQLlrYt?usp=sharing
+
 
 ## List of softwares to be installed
-* [Git](https://git-scm.com/downloads)
-* [VS Code](https://code.visualstudio.com/)
-* [Extentions](https://code.visualstudio.com/docs/editor/extension-marketplace) - c#, Azure Tools, Kubernetes, Docker, Git Lens
-* [Docker Desktop](https://www.docker.com/products/docker-desktop)
-* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-* [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
-* A personal Microsoft email ID
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+- [Git](https://git-scm.com/downloads)
+- [VS Code](https://code.visualstudio.com/)
+- [Extentions](https://code.visualstudio.com/docs/editor/extension-marketplace) - c#, Kubernetes, Helm, Docker, Git Lens
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Helm](https://helm.sh/docs/intro/install/) 
+- [.Net](https://dotnet.microsoft.com/en-us/download)
 
 
-## Prerequisites
-* [Azure Free Trial](https://azure.microsoft.com/en-in/free/)  
-#### This will be provided during the course. However, it is recommended to create your own account for self-learning.
+# Running a Local Kubernetes Cluster
+
+Kubernetes clusters can have hundreds of nodes in production, but you can run a single-node cluster on your laptop and it works in the same way.
+
+We'll also use [Git](https://git-scm.com) for source control, so you'll need a client on your machine to talk to GitHub.
+
+## Git Client - Mac, Windows or Linux
+
+Git is a free, open source tool for source control:
+
+- [Install Git](https://git-scm.com/downloads)
 
 
-## Create an Azure Resource Group
-Login to Azure account using Azure CLI
-```sh
-az login
+## Docker Desktop - Mac or Windows
+
+If you're on macOS or Windows 10 Docker Desktop is the easiest way to get Kubernetes:
+
+- [Install Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+The download and install takes a few minutes. When it's done, run the _Docker_ app and you'll see the Docker whale logo in your taskbar (Windows) or menu bar (macOS).
+
+> On Windows 10 the install may need a restart before you get here.
+
+Click _Settings_:
+
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/11691661/195954055-f1491bbf-e0da-4f0e-b9bf-261cf655ebf4.png">
+
+In the settings Windows select _Kubernetes_ from the left menu and click _Enable Kubernetes_: 
+
+<img width="996" alt="image" src="https://user-images.githubusercontent.com/11691661/195953987-0422c4bf-c057-4937-a516-5a92ebb5ff8e.png">
+
+> Docker downloads all the Kubernetes components and sets them up. That can take a few minutes too. When the Docker logo and the Kubernetes logo in the UI are both green, everything is running.
+
+## Check your cluster
+
+You should be able to run this command and get some output about your cluster:
+
+```
+kubectl get nodes
 ```
 
-Set default Azure subscription
-```sh
-az account set --subscription ”b214611b-9a79-4e7e-afb0-3d9785737f10”
+I'm using Docker Desktop and mine says:
+
+```
+NAME             STATUS   ROLES    AGE    VERSION
+docker-desktop   Ready    master   5d4h   v1.19.7
 ```
 
-Create Resource Group
-```sh
-az group create --name <Your-Name-RG-01> --location eastus
-```
+> Your details may be different - that's fine. If you get errors then we need to look into it, because you'll need your own cluster for every part of the course.
 
-Get the current default subscription using list 
-```sh
-az account list --query "[?isDefault]"
-```
+
