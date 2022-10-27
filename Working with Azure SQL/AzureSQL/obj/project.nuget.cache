@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p7O+cd9Bsl1ObeX42drTa6zQAFVeYnC8y84PFzKx1j8Ej/F2gveJeB24D/H55cix8VilRRNFcvBgmfWZKE8HdA==",
+  "dgSpecHash": "cMKmFdj78R4dM+aLIlYtbh5JCt12C+XosUf7ZJggX6UECq1b+uzLszNvO3HWaASQl1Z6RXADzLMwmbXxMbSXIw==",
   "success": true,
-  "projectFilePath": "c:\\Starbucks\\Cloud for Partners\\Cloud-For-Partners\\Working with Azure SQL\\Working With Azure SQL\\Working With Azure SQL.sqlproj",
+  "projectFilePath": "c:\\Starbucks\\Cloud for Partners\\Cloud-For-Partners\\Working with Azure SQL\\AzureSQL\\Working With Azure SQL.sqlproj",
   "expectedPackageFiles": [
     "C:\\Users\\adminuser\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
     "C:\\Users\\adminuser\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"

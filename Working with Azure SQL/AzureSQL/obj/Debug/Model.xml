@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Working With Azure SQL.dll" />
-			<Metadata Name="FileName" Value="c:\Starbucks\Cloud for Partners\Cloud-For-Partners\Working with Azure SQL\Working With Azure SQL\obj\Debug\Working With Azure SQL.dll" />
+			<Metadata Name="FileName" Value="c:\Starbucks\Cloud for Partners\Cloud-For-Partners\Working with Azure SQL\AzureSQL\obj\Debug\Working With Azure SQL.dll" />
 			<Metadata Name="AssemblyName" Value="Working With Azure SQL" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="c:\Starbucks\Cloud for Partners\Cloud-For-Partners\Working with Azure SQL\Working With Azure SQL\obj\Debug\Working With Azure SQL.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="c:\Starbucks\Cloud for Partners\Cloud-For-Partners\Working with Azure SQL\AzureSQL\obj\Debug\Working With Azure SQL.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
