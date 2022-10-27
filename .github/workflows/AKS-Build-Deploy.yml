@@ -1,0 +1,32 @@
+name: AKS-Build-Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Working with Actions/Dockerfile --tag tshapelabacr01.azurecr.io/cloudforpartners:sid
+   
+    - name: Azure Container Registry Login
+      uses: Azure/docker-login@v1
+      with:
+        # Container registry username
+        username: ${{ secrets.ACR_USERNAME }}
+        # Container registry password
+        password: ${{ secrets.ACR_CREDENTIALS }} 
+        # Container registry server url
+        login-server: tshapelabacr01.azurecr.io
+        
+        
+    - name: Push Image  
+      run: docker push tshapelabacr01.azurecr.io/cloudforpartners:sid
