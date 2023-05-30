@@ -18,6 +18,8 @@ These are hands-on resources to help you learn Azure Fundamentals.
 
 ## Azure Resource Groups
 
+- [Working with Azure Resource Groups](labs/resourcegroups/README.md)
+
 ## Azure App Services
 
 - [Working with Azure App Services](labs/appservices/README.md)
