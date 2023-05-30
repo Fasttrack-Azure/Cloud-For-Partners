@@ -18,7 +18,7 @@ In this lab you'll create an App Service deployment by pushing source code from 
 
 
 ## Create an ASP.NET Core app in a Docker container from Docker Hub using Azure CLI
-### Launch Azure Cloud Shell
+### Launch Azure Cloud Shell Bash Terminal
 
 The Azure Cloud Shell is a free interactive shell that you can use to run the steps in this article. It has common Azure tools preinstalled and configured to use with your account.
 To open the Cloud Shell, just select Try it from the upper right corner of a code block. You can also launch Cloud Shell in a separate browser tab by going to https://shell.azure.com.
@@ -39,7 +39,7 @@ az account set -s $subscription # ...or use 'az login'
 # Variable block
 let "randomIdentifier=$RANDOM*$RANDOM"
 location="East US"
-resourceGroup="RG-sid-$randomIdentifier"
+resourceGroup="RG-<your-name>-$randomIdentifier"
 tag="deploy-linux-docker-app-only.sh"
 appServicePlan="sb-app-service-plan-$randomIdentifier"
 webapp="sb-web-app-$randomIdentifier"
