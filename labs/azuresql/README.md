@@ -66,7 +66,7 @@ This will get you started:
 
 ```
 # you'll need to supply your own name and password:
-az sql server create -l eastus -g RG-labs-<your-name>-sql -n sqlserv<your-name> -u sqladmin -p <admin-password>
+az sql server create -l eastus -g RG-labs-<your-name>-sql -n sqlserv<your-name> -u sqladmin -p Admin@1234567
 ```
 
 </details><br/>
@@ -89,7 +89,7 @@ The SQL Server is a container for zero or more databases. When you have a SQL Se
 You need to supply the SQL Server name, resource group and a database name:
 
 ```
-az sql db create -g RG-labs-<your-name>-sql -n db01 -s sqlserv<your-name>
+az sql db create -g RG-labs-<your-name>-sql -n db01 -s sqlserv<your-name> --service-objective Basic
 ```
 
 </details><br/>
@@ -108,6 +108,7 @@ The portal view for SQL Databases shows connection strings. Use that to connect 
 - you can use Visual Studio or SQL Server Management Studio if you have them
 - or the [SQL Server Extension for VS Code](https://docs.microsoft.com/en-us/sql/tools/visual-studio-code/sql-server-develop-use-vscode?view=sql-server-ver15)
 - or a simple client like [Sqlectron](https://github.com/sqlectron/sqlectron-gui/releases/tag/v1.32.1) (don't download a newer version than 1.32 because of [issue 699](https://github.com/sqlectron/sqlectron-gui/issues/699))
+- Azure Portal - Query Editor
 
 📋 Try to connect with the SQL Server credentials - can you access the database?
 
@@ -117,7 +118,6 @@ The portal view for SQL Databases shows connection strings. Use that to connect 
 You'll see an error like this:
 
 *Cannot open server 'sql-labs-03' requested by the login. Client with IP address '216.213.184.119' is not allowed to access the server. To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range. It may take up to five minutes for this change to take effect.*
-
 </details><br/>
 
 SQL Server has an IP block, so you need to explicitly allow access to clients based on the originating IP address.
@@ -131,7 +131,7 @@ When you successfuly connect, you're using the administrator credentials so you 
 ```
 CREATE TABLE students (id INT IDENTITY, email NVARCHAR(150))
 
-INSERT INTO students(email) VALUES ('elton@sixeyed.com')
+INSERT INTO students(email) VALUES ('siddharthdwn@gmail.com')
 
 SELECT * FROM students
 ```
