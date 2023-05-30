@@ -1,8 +1,0 @@
-
-
-CREATE TABLE [dbo].[Stores]
-(
-	[Id] INT IDENTITY NOT NULL PRIMARY KEY, 
-    [Name] VARCHAR(50) NULL, 
-    [Country] VARCHAR(50) NULL
-)
