@@ -16,6 +16,8 @@ These are hands-on resources to help you learn Azure Fundamentals.
 - [Management using Azure Portal](labs/management/azureportal/README.md)
 - [Management using Azure CLI](labs/management/azurecli/README.md)
 
+## Azure Resource Groups
+
 ## Azure App Services
 
 - [Working with Azure App Services](labs/appservices/README.md)
