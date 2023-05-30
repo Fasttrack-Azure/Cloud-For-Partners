@@ -20,7 +20,7 @@ These are hands-on resources to help you learn Azure Fundamentals.
 
 - [Working with Azure App Services](labs/appservices/README.md)
 
-## Storage
+## Azure Storage
   
 - [Working with Azure Storage](labs/storage/README.md)
 
