@@ -6,7 +6,10 @@
 The Azure Cloud Shell is a free interactive shell that you can use to run the steps in this article. It has common Azure tools preinstalled and configured to use with your account.
 To open the Cloud Shell, just select Try it from the upper right corner of a code block. You can also launch Cloud Shell in a separate browser tab by going to https://shell.azure.com.
 
-### Sign in to Azure
+<img width="1440" alt="image" src="https://github.com/Fasttrack-Azure/Cloud-For-Partners/assets/11691661/d551459b-7d3f-43b7-9cfb-fc0d49538fc0">
+
+
+### Sign in to Azure from CLI
 ```
 $subscription="<subscriptionId>" # add subscription here
 
@@ -52,8 +55,6 @@ az appservice plan update --sku B1 --name $appServicePlan --resource-group $reso
 ```
 az appservice plan update --number-of-workers 2 --name $appServicePlan --resource-group $resourceGroup
 ```
-
-
 
 
 ## Clean up resources
