@@ -1,5 +1,22 @@
 # Working with Azure App Service
 
+# App Service for Web Apps
+
+IaaS options are great when you need access to the host machine to configure and deploy your app, but it leaves you with a lot of management overhead. Platform-as-a-Service (PaaS) takes care of that for you, simplifying deployment and updates, provided your application is supported in the PaaS environment. Azure has a few PaaS options - App Service is a very popular one.
+
+In this lab you'll create an App Service deployment by pushing source code from your local machine. Azure will compile and configure the app for you.
+
+## Reference
+
+- [Azure App Service overview](https://docs.microsoft.com/en-us/azure/app-service/overview)
+
+- [App Service Plan overview](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+
+- [`az appservice` commands](https://docs.microsoft.com/en-us/cli/azure/appservice?view=azure-cli-latest)
+
+- [`az webapp` commands](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest)
+
+
 ## Create an ASP.NET Core app in a Docker container from Docker Hub using Azure CLI
 ### Launch Azure Cloud Shell
 
@@ -11,7 +28,7 @@ To open the Cloud Shell, just select Try it from the upper right corner of a cod
 
 ### Sign in to Azure from CLI
 ```
-$subscription="<subscriptionId>" # add subscription here
+$subscription="79080195-8aac-4282-8f0d-5910cb4209c0" # add subscription here
 
 az account set -s $subscription # ...or use 'az login'
 ```
@@ -22,7 +39,7 @@ az account set -s $subscription # ...or use 'az login'
 # Variable block
 let "randomIdentifier=$RANDOM*$RANDOM"
 location="East US"
-resourceGroup="<your-name>-$randomIdentifier"
+resourceGroup="RG-sid-$randomIdentifier"
 tag="deploy-linux-docker-app-only.sh"
 appServicePlan="sb-app-service-plan-$randomIdentifier"
 webapp="sb-web-app-$randomIdentifier"
