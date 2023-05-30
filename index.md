@@ -36,10 +36,10 @@ These are hands-on resources to help you learn Azure Fundamentals.
 
 ## Azure Kubernetes Service
 
-- [Nodes](labs/nodes/README.md)
-- [Pods](labs/pods/README.md)
-- [Services](labs/services/README.md)
-- [Deployments](labs/deployments/README.md)
+- [Nodes](labs/aks/nodes/README.md)
+- [Pods](labs/aks/pods/README.md)
+- [Services](labs/aks/services/README.md)
+- [Deployments](labs/aks/deployments/README.md)
 
 ## Case Studies
 
