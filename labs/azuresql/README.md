@@ -53,7 +53,7 @@ Print the help text:
 ```
 az sql server create --help
 ```
-
+  
 As a minimum you need to specify:
 
 - resource group
