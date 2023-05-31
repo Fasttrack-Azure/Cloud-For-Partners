@@ -45,9 +45,6 @@ Now you can create the SQL Server which will be the host for the database.
 
 📋 Create a database server using a `sql server create` command. There are a few parameters you'll need to specify.
 
-<details>
-  <summary>Not sure how?</summary>
-
 Print the help text:
 
 ```
@@ -69,8 +66,6 @@ This will get you started:
 az sql server create -l eastus -g RG-labs-<your-name>-sql -n sqlserv<your-name> -u sqladmin -p Admin@1234567
 ```
 
-</details><br/>
-
 > Creating a new SQL Server takes a few minutes. While it's running, check the docs to answer this:
 
 - what is the running cost for a SQL Server with no databases?
@@ -83,16 +78,11 @@ The SQL Server is a container for zero or more databases. When you have a SQL Se
 
 📋 Create a database called `db01` in your SQL Server using the `az` command.
 
-<details>
-  <summary>Not sure how?</summary>
-
 You need to supply the SQL Server name, resource group and a database name:
 
 ```
 az sql db create -g RG-labs-<your-name>-sql -n db01 -s sqlserv<your-name> --service-objective Basic
 ```
-
-</details><br/>
 
 > This will also take a couple of minutes; check the portal to see the status. In the meantime, can you answer:
 
@@ -112,13 +102,9 @@ The portal view for SQL Databases shows connection strings. Use that to connect 
 
 📋 Try to connect with the SQL Server credentials - can you access the database?
 
-<details>
-  <summary>Not sure?</summary>
-
 You'll see an error like this:
 
 *Cannot open server 'sql-labs-03' requested by the login. Client with IP address '216.213.184.119' is not allowed to access the server. To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range. It may take up to five minutes for this change to take effect.*
-</details><br/>
 
 SQL Server has an IP block, so you need to explicitly allow access to clients based on the originating IP address.
 
