@@ -43,8 +43,6 @@ az storage account create --help
 
 📋 Create a zone-redundant storage account with standard performance.
 
-<details>
-  <summary>Not sure how?</summary>
 
 The SKU parameter includes performance and redundancy settings, e.g:
 
@@ -56,20 +54,14 @@ The SKU parameter includes performance and redundancy settings, e.g:
 az storage account create -g labs-<your-name>-storage-RG  -l westeurope --sku Standard_ZRS -n <your-name>storage
 ```
 
-</details><br/>
-
 Open the new resource in the Portal - one storage account can support multiple types of storage. Blob storage (Binary Large OBjects) is a simple file storage option, where you can store files in _containers_, which are like folders.
 
 📋 Upload the file [document.txt](/labs/storage/document.txt) in this folder as a blob in a container called _drops_.
-
-<details>
-  <summary>Not sure how?</summary>
 
 The Storage Account blade has an _Upload_ option in the main menu. Select that and you can browse to your local file and upload it.
 
 You can create a new container from that menu, and supply a container name.
 
-</details><br/>
 
 > Blob storage is not hierarchical - you can't have containers in other containers - but blob names can include forward slashes e.g. `my/blob/file.txt` which lets you approximate nested storage
 
@@ -96,15 +88,10 @@ cat download2.txt
 
 📋 Change the access level of the container so you can download the blob.
 
-<details>
-  <summary>Not sure how?</summary>
-
 Browse to the _drops_ container in the Portal and select _Change access level_:
 
 - blob access means anyone with the URL can download the file
 - container access means anyone can list the container contents and download all blobs
-
-</details><br/>
 
 Once you've set a public access level, you can download the file:
 
