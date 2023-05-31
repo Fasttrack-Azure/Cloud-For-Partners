@@ -8,6 +8,7 @@ These are hands-on resources to help you learn Azure Fundamentals.
     - Open [Account Setup Guide](https://docs.google.com/document/d/1oJkt2yoh9kCQBzdKHfNGq_xTVzslvAxsk6G0YFbdM5s/edit?usp=sharing)
 - _Optional_
     - Install [Visual Studio Code](https://code.visualstudio.com) (free - Windows, macOS and Linux) to browse the repo and documentation
+- _Download the course [Slides](https://drive.google.com/drive/folders/1GAckfxqDx8SIY_NBGqZcR8cquKZtl_Ah?usp=sharing) here_
 
 # Day 1
 
