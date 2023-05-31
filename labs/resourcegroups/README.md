@@ -53,9 +53,6 @@ The CLI help text shows you how to find the list of regions too.
 
 📋 Create a new RG called `labs-<your-name>-rg-2` in a different region from the first, with the same tag `courselabs=azure`.
 
-<details>
-  <summary>Not sure how?</summary>
-
 Find the list of regions (this command is in the `group create` help text):
 
 ```
@@ -68,8 +65,6 @@ Create a group, this example uses West US 2:
 az group create -n labs-<your-name>-rg-2 -l westus2 --tags courselabs=azure
 ```
 
-</details><br/>
-
 When you create a resource with the CLI it waits until resource is ready and then prints the details.
 
 ## Manage Resource Groups
@@ -78,14 +73,9 @@ The `az` command line works in a consistent way for all resources. You create, l
 
 📋 Print the list of all your RGs, showing the output in table form.
 
-<details>
-  <summary>Not sure how?</summary>
-
 ```
 az group list -o table 
 ```
-
-</details><br/>
 
 We added the same tag to both RGs. Tags are simple key-value pairs which you can add to all resource to help manage them. You might have an `environment` tag to identify resources in dev or UAT environments.
 
@@ -110,14 +100,11 @@ az group delete --query "[?tags.courselabs=='azure']"
 
 📋 Delete the first resource group `labs-<your-name>-rg-1` using the command line.
 
-<details>
-  <summary>Not sure how?</summary>
 
 ```
 az group delete -n labs-<your-name>-rg-1
 ```
 
-</details><br/>
 
 > You'll be asked for confirmation and then the command will wait until the group is deleted.
 
