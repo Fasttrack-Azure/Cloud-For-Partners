@@ -48,10 +48,10 @@ Answer the following question based on the information presented in the case stu
 ```
 Which of the below tools must be implemented for the planned change #2?
 
-A. Ansible
+A. ARM Templates
 B. Helm
 C. Terraform
-D. Both A and C
+D. A or C
 E. Both B and C
 ```
 #### Question # 2 (Multiple Choice)
